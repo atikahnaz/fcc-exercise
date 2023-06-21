@@ -37,9 +37,9 @@ def hello_world():
     return render_template('home.html', jobs=JOBS, company_name='Atikah')
 
 # also can use route from api
-@app.route("/api/jobs")
-def list_jobs():
-    return jsonify(JOBS)
+#@app.route("/api/jobs")
+#def list_jobs():
+    #return jsonify(JOBS)
 
 if __name__ == "__main__":
     app.run('0.0.0.0', debug= True)
